@@ -19,6 +19,7 @@
 ######################
 ### Additions      ###
 ######################
+# Ignore unused icon and screen files.
 res/icon/bada-wac/
 res/icon/bada/
 res/icon/blackberry/
