@@ -73,10 +73,9 @@
 <script type="text/javascript">
     function onDeviceReady() {
         document.removeEventListener('deviceready', onDeviceReady, false);
-        // Set AdMobAds options:
+        // Set cordova-admob options:
         admob.setOptions({
-            // AppID: ca-app-pub-9220202929300502~2632398749
-            publisherId: "ca-app-pub-9220202929300502/9759654695", // Required
+            publisherId: "ca-app-pub-9220202929300502/9759654695",
             interstitialAdId: "ca-app-pub-9220202929300502/8184108323"
         });
     }
@@ -295,9 +294,8 @@
             <h1 class="bd-title" id="content">Grid system</h1>
             <p class="bd-lead">Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
             <script type="text/javascript">
-    // Show Banner Ads
+    // Start cordova-admob code
     admob.createBannerView();
-
     // Show Interstitial
     admob.requestInterstitialAd({
         autoShowInterstitial: true

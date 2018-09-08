@@ -73,10 +73,9 @@
 <script type="text/javascript">
     function onDeviceReady() {
         document.removeEventListener('deviceready', onDeviceReady, false);
-        // Set AdMobAds options:
+        // Set cordova-admob options:
         admob.setOptions({
-            // AppID: ca-app-pub-9220202929300502~2632398749
-            publisherId: "ca-app-pub-9220202929300502/9759654695", // Required
+            publisherId: "ca-app-pub-9220202929300502/9759654695",
             interstitialAdId: "ca-app-pub-9220202929300502/8184108323"
         });
     }
@@ -258,9 +257,8 @@
             <h1 class="bd-title" id="content">JavaScript</h1>
             <p class="bd-lead">Bring Bootstrap to life with our optional JavaScript plugins built on jQuery. Learn about each plugin, our data and programmatic API options, and more.</p>
             <script type="text/javascript">
-    // Show Banner Ads
+    // Start cordova-admob code
     admob.createBannerView();
-
     // Show Interstitial
     admob.requestInterstitialAd({
         autoShowInterstitial: true
