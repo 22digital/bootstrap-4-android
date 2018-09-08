@@ -77,10 +77,7 @@
         admob.setOptions({
             // AppID: ca-app-pub-9220202929300502~2632398749
             publisherId: "ca-app-pub-9220202929300502/9759654695", // Required
-            interstitialAdId: "ca-app-pub-9220202929300502/8184108323", // Optional
-            //tappxIdiOS:           "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
-            //tappxIdAndroid:       "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
-            //tappxShare:           0.5                                        // Optional
+            interstitialAdId: "ca-app-pub-9220202929300502/8184108323"
         });
     }
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -251,9 +248,9 @@
     admob.createBannerView();
 
     // Show Interstitial
-    // admob.requestInterstitialAd({
-    //     autoShowInterstitial: true
-    // });
+    admob.requestInterstitialAd({
+        autoShowInterstitial: true
+    });
 </script>
 
             <p>Width and height utilities are generated from the <code class="highlighter-rouge">$sizes</code> Sass map in <code class="highlighter-rouge">_variables.scss</code>. Includes support for <code class="highlighter-rouge">25%</code>, <code class="highlighter-rouge">50%</code>, <code class="highlighter-rouge">75%</code>, <code class="highlighter-rouge">100%</code>, and <code class="highlighter-rouge">auto</code> by default. Modify those values as you need to generate different utilities here.</p>

@@ -77,10 +77,7 @@
         admob.setOptions({
             // AppID: ca-app-pub-9220202929300502~2632398749
             publisherId: "ca-app-pub-9220202929300502/9759654695", // Required
-            interstitialAdId: "ca-app-pub-9220202929300502/8184108323", // Optional
-            //tappxIdiOS:           "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
-            //tappxIdAndroid:       "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
-            //tappxShare:           0.5                                        // Optional
+            interstitialAdId: "ca-app-pub-9220202929300502/8184108323"
         });
     }
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -251,9 +248,9 @@
     admob.createBannerView();
 
     // Show Interstitial
-    // admob.requestInterstitialAd({
-    //     autoShowInterstitial: true
-    // });
+    admob.requestInterstitialAd({
+        autoShowInterstitial: true
+    });
 </script>
 
             
