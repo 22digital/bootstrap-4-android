@@ -47,17 +47,20 @@
 <link href="file:///android_asset/www/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
 <!-- Google Analytics -->
 <script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    window.ga = window.ga || function() {
+        (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
     var GA_LOCAL_STORAGE_KEY = 'ga:clientId';
     ga('create', 'UA-111102416-5', {
-      'storage': 'none',
-      'clientId': localStorage.getItem(GA_LOCAL_STORAGE_KEY)
+        'storage': 'none',
+        'clientId': localStorage.getItem(GA_LOCAL_STORAGE_KEY)
     });
     ga(function(tracker) {
-      localStorage.setItem(GA_LOCAL_STORAGE_KEY, tracker.get('clientId'));
+        localStorage.setItem(GA_LOCAL_STORAGE_KEY, tracker.get('clientId'));
     });
     // File URL support.
-    ga('set', 'checkProtocolTask', function(){ /* noop */});
+    ga('set', 'checkProtocolTask', function() { /* noop */ });
     // Send the screenview hit.
     ga('send', {
         hitType: 'screenview',
@@ -68,21 +71,19 @@
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 <!-- Admob Plugin  -->
 <script type="text/javascript">
-function onDeviceReady() {
-document.removeEventListener('deviceready', onDeviceReady, false);
-
-// Set AdMobAds options:
-admob.setOptions({
-    // AppID: ca-app-pub-9220202929300502~2632398749
-    publisherId:          "ca-app-pub-9220202929300502/9759654695",  // Required
-    interstitialAdId:     "ca-app-pub-9220202929300502/8184108323",  // Optional
-    //tappxIdiOS:           "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
-    //tappxIdAndroid:       "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
-    //tappxShare:           0.5                                        // Optional
-});
-}
-
-document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady() {
+        document.removeEventListener('deviceready', onDeviceReady, false);
+        // Set AdMobAds options:
+        admob.setOptions({
+            // AppID: ca-app-pub-9220202929300502~2632398749
+            publisherId: "ca-app-pub-9220202929300502/9759654695", // Required
+            interstitialAdId: "ca-app-pub-9220202929300502/8184108323", // Optional
+            //tappxIdiOS:           "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
+            //tappxIdAndroid:       "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
+            //tappxShare:           0.5                                        // Optional
+        });
+    }
+    document.addEventListener("deviceready", onDeviceReady, false);
 </script>
 
   </head>
